@@ -27,7 +27,7 @@
     box-shadow: unset;
     padding: 0;
     background: unset;
-    background-color: white;
+    background-color: var(--bg-color);
     min-height: unset;
   }
 

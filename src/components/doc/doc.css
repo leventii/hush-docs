@@ -1,6 +1,6 @@
 #doc>.topnav-container {
   margin-top: 55px;
-  border-top: 1px solid;
+  border-top: 1px solid var(--border-color);
 }
 
 #quill-container {
@@ -11,11 +11,39 @@
   height: 800px;
 }
 
+.ql-container {
+  font-size: 16px;
+  border-color: var(--border-color) !important;
+}
+
 .ql-editor {
   padding: 32px 36px;
 }
 
+.ql-toolbar,
+.ql-picker-options,
+.ql-picker.ql-expanded .ql-picker-label {
+  border-color: var(--border-color) !important;
+}
+
+.ql-picker {
+  color: var(--ql-editor-toolbar) !important;
+}
+
+.ql-snow .ql-stroke {
+  stroke: var(--ql-editor-toolbar);
+}
+
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: var(--ql-editor-toolbar);
+}
+.ql-picker-options {
+  background-color: var(--bg-color) !important;
+}
+
 .ql-blank::before {
+  color: var(--ql-editor-blank) !important;
   left: unset !important;
   right: unset !important;
 }
@@ -71,7 +99,7 @@
 
 #toolbar,
 #editor {
-  background: white;
+  background: var(--editor-bg-color);
 }
 
 @media screen and (max-width: 768px) {

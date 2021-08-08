@@ -1,9 +1,45 @@
+:root {
+  --bg-color: #eee;
+  --editor-bg-color: #f8f8f8;
+  --text-color: #222;
+  --link-color: darkcyan;
+  --border-color: #acacac;
+  --modal-backdrop: rgba(160, 160, 160, .6);
+  --modal-bg: #fefefe;
+  --dropdown-link: #87c6c3;
+  --menu-divider: #e1e1e1;
+  --table-row: lightgrey;
+  --danger: red;
+  --gray: grey;
+
+  --ql-editor-blank: #00000080;
+  --ql-editor-toolbar: #444;
+}
+
+[data-theme="dark"] {
+  --bg-color: #222;
+  --editor-bg-color: #303030;
+  --text-color: #eee;
+  --link-color: cornflowerblue;
+  --border-color: rgba(0,0,0,.5);
+  --modal-backdrop: rgba(25,25,25,.5);
+  --modal-bg: #333;
+  --menu-divider: dimgray;
+  --table-row: #3f3f3f;
+  --danger: #ee0000;
+  --gray: #888;
+
+  --ql-editor-blank: #eeeeee80;
+  --ql-editor-toolbar: #ccc;
+}
+
 body {
   margin: 0;
   font-family: monospace, Consolas, 'Courier New';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eeeeee;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   height: 100%;
   overflow: auto;
   font-size: 18px;
@@ -44,7 +80,7 @@ h3 { font-size: 1.6em; }
 }
 
 a {
-  color: black;
+  color: var(--link-color);
 }
 
 a:hover, .link:hover {
@@ -88,12 +124,12 @@ input[type='password']::placeholder {
 }
 
 .validity:invalid, .invalid {
-  border-color: red !important;
+  border-color: var(--danger) !important;
 }
 
 .container {
-  background: white;
-  border: 1px solid;  
+  background: var(--editor-bg-color);
+  border: 1px solid var(--border-color);  
   box-shadow: 3px 3px 6px #00000040;
   text-align: center;
   padding: 2em;
@@ -121,11 +157,11 @@ input[type='password']::placeholder {
   }
 }
 
-.error { color: red; }
-.dangerous-hover:hover { color: red }
+.error { color: var(--danger); }
+.dangerous-hover:hover { color: var(--danger) }
 
 .loading, .disabled {
-  color: grey;
+  color: var(--gray);
   cursor: default;
 }
 
@@ -157,7 +193,7 @@ input[type='password']::placeholder {
 }
 
 .grey {
-  color: grey;
+  color: var(--gray);
 }
 
 /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
@@ -222,15 +258,15 @@ input[type='password']::placeholder {
 }
 
 .dashboard-table tr {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .dashboard-table tr:first-child {
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid var(--border-color);
 }
 
 .dashboard-table tbody tr:hover {
-  background-color: #eeeeee;
+  background-color: var(--table-row);
 }
 
 .dashboard-table th:first-child,
@@ -244,7 +280,7 @@ input[type='password']::placeholder {
 }
 
 .dashboard-table thead tr {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .create-doc-to-get-started {
@@ -253,7 +289,7 @@ input[type='password']::placeholder {
 }
 
 .dangerous {
-  color: red;
+  color: var(--danger);
 }
 
 .float-right { float: right; }
