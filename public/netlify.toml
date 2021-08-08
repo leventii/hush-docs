@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://hushdocs.com/*"
-  to = "https://demo.hushdocs.com/:splat"
-  status = 301
-  force = true

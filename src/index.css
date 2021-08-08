@@ -1,4 +1,4 @@
-:root {
+body.light-mode {
   --bg-color: #eee;
   --editor-bg-color: #f8f8f8;
   --text-color: #222;
@@ -14,9 +14,12 @@
 
   --ql-editor-blank: #00000080;
   --ql-editor-toolbar: #444;
+
+  --image-grayscale: 0%;
+  --image-opacity: 100%;
 }
 
-[data-theme="dark"] {
+body.dark-mode {
   --bg-color: #222;
   --editor-bg-color: #303030;
   --text-color: #eee;
@@ -31,6 +34,9 @@
 
   --ql-editor-blank: #eeeeee80;
   --ql-editor-toolbar: #ccc;
+
+  --image-grayscale: 50%;
+  --image-opacity: 90%;
 }
 
 body {
@@ -86,6 +92,11 @@ a {
 a:hover, .link:hover {
   cursor: pointer;
   font-weight: bold;
+}
+
+img,
+video {
+  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
 
 .link {

@@ -10,6 +10,7 @@ import {
 import NavBar from './components/navBar/navBar'
 import HushDoc from './components/doc/doc'
 import Dashboard from './components/dashboard/dashboard'
+import DarkModeToggle from './components/toggle/darkModeToggle'
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class App extends Component {
 
     this.state = {
       mode: undefined,
-      user: undefined,
+      user: undefined
     }
   }
 
@@ -126,6 +127,8 @@ class App extends Component {
               console.error('Unknown mode')
           }
         })()}
+
+        <DarkModeToggle />
       </div>
     )
   }
