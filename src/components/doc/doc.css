@@ -1,6 +1,9 @@
 #doc>.topnav-container {
   margin-top: 55px;
   border-top: 1px solid var(--border-color);
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 #quill-container {
@@ -100,6 +103,9 @@
 #toolbar,
 #editor {
   background: var(--editor-bg-color);
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 @media screen and (max-width: 768px) {

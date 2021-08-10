@@ -10,7 +10,7 @@ import {
 import NavBar from './components/navBar/navBar'
 import HushDoc from './components/doc/doc'
 import Dashboard from './components/dashboard/dashboard'
-import DarkModeToggle from './components/toggle/darkModeToggle'
+import Toggle from './components/toggle/toggle'
 
 class App extends Component {
   constructor(props) {
@@ -128,7 +128,7 @@ class App extends Component {
           }
         })()}
 
-        <DarkModeToggle />
+        <Toggle />
       </div>
     )
   }

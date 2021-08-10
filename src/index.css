@@ -49,6 +49,9 @@ body {
   height: 100%;
   overflow: auto;
   font-size: 18px;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 select {
@@ -144,6 +147,9 @@ input[type='password']::placeholder {
   box-shadow: 3px 3px 6px #00000040;
   text-align: center;
   padding: 2em;
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 @media only screen and (max-width: 500px) {

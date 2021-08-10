@@ -1,53 +1,9 @@
-/* HTML5 Boilerplate accessible hidden styles */
-.toggle-control input[type="checkbox"] {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: fixed;
-    bottom: 1em;
-    right: 1rem;
-    width: 1px;
+.toggle-switch {
+    position: fixed !important;
+    bottom: 2em;
+    right: 2em;
 }
 
-/* One checkbox button per line */
-.toggle-control label {
-    display: block;
-    cursor: pointer;
-    line-height: 2.5;
-    font-size: 1.5em;
-}
-
-.toggle-control input[type="checkbox"]+span {
-    display: block;
-}
-
-/* the basic, unchecked style */
-.toggle-control input[type="checkbox"]+span:before {
-    content: '';
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.25em;
-    border-radius: 1em;
-    border: 0.125em solid #fff;
-    box-shadow: 0 0 0 0.15em #000;
-    margin-right: 0.75em;
-    transition: 0.5s ease all;
-}
-
-/* the checked style using the :checked pseudo class */
-.toggle-control input[type="checkbox"]:checked+span:before {
-    background: green;
-    box-shadow: 0 0 0 0.25em #000;
-}
-
-/* never forget focus styling */
-.toggle-control input[type="checkbox"]:focus+span:after {
-    content: '\0020\2190';
-    font-size: 1.5em;
-    line-height: 1;
-    vertical-align: -0.125em;
+.toggle-switch .react-switch-handle {
+    background-color: transparent !important;
 }

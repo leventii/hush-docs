@@ -4,6 +4,9 @@
   "private": true,
   "description": "Offline-first, private Google Docs alternative.",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -17,6 +20,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.1",
+    "react-switch": "^6.0.0",
     "use-dark-mode": "^2.3.1",
     "userbase-js": "^2.8.0",
     "uuid": "^8.3.2",

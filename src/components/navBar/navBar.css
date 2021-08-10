@@ -1,5 +1,8 @@
 #topnav {
   border-bottom: none !important;
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 .topnav-container {
