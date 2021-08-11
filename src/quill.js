@@ -1,4 +1,5 @@
 import Quill from 'quill'
+import BlotFormatter from 'quill-blot-formatter';
 import 'quill/dist/quill.snow.css'
 import Automerge from 'automerge'
 import { v4 as uuidv4 } from 'uuid'
@@ -160,9 +161,12 @@ const newQuill = () => {
   Size.whitelist = ["small", "normal", "large", "huge"]
   Quill.register(Size, true)
 
+  Quill.register('modules/blotFormatter', BlotFormatter)
+
   return new Quill('#editor', {
     modules: {
-      toolbar: '#toolbar'
+      toolbar: '#toolbar',
+      blotFormatter: {}
     },
     theme: 'snow',
     placeholder: DEFAULT_PLACEHOLER,
